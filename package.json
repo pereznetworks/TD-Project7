@@ -1,0 +1,24 @@
+{
+  "name": "td-project7",
+  "version": "1.0.0",
+  "description": "A Portfolio Site of My Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pereznetworks/TD-Project7.git"
+  },
+  "keywords": [
+    "express",
+    "node.js",
+    "pug"
+  ],
+  "author": "Daniel Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pereznetworks/TD-Project7/issues"
+  },
+  "homepage": "https://github.com/pereznetworks/TD-Project7#readme"
+}
