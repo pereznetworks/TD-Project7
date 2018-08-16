@@ -7,7 +7,7 @@
 
 # Featuring Project 1 thru 6
 
-  Step 1A: make sure we have a live link for each "front-end" project
+    Step 1A: make sure we have a live link for each "front-end" project
 
       Project 1 : Random Qoutes Generator
           Live Link:  https://pereznetworks.github.io/TechDegree-Project1/
@@ -41,4 +41,4 @@
     Step 2: get screen shots for each ....
 
       need a thumbnail, sqaure img
-      and a widescreen full img 
+      and a widescreen full img
