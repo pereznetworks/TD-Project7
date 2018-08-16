@@ -5,7 +5,7 @@
     this site is built using Node.js and Express Framework
 
 
-# Featuring Project 1 thru 6
+# Featuring Projects 1 thru 6
 
     Step 1A: make sure we have a live link for each "front-end" project
 
