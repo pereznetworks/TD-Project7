@@ -37,7 +37,7 @@
 
       Project 6 : Build a Content Scraper for a shopping site
           Live Link:  ??
-          GitHub : https://github.com/pereznetworks/TD-Project5
+          GitHub : https://github.com/pereznetworks/TD-Project6
 
     Step 2: get screen shots for each ....
 
