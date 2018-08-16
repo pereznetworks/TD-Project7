@@ -2,7 +2,8 @@
 
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree  
 
-    this site is built using Node.js and Express Framework
+    this site is built using Node.js, Express Framework,
+    and Pug for template rendering 
 
 
 # Featuring Projects 1 thru 6
