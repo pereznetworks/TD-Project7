@@ -29,10 +29,16 @@
           Live Link:  https://pereznetworks.github.io/TD-Project5/
           GitHub : https://github.com/pereznetworks/TD-Project5
 
-    Step 1B: what to do for project 6, which is command line app
-    so we'll have to think about how to demo this live, online..
+    Step 1B:
+
+      what to do for project 6, which is command line app
+        so we'll have to think about how to demo this live, online..
+
       Project 6 : Build a Content Scraper for a shopping site
           Live Link:  ??
           GitHub : https://github.com/pereznetworks/TD-Project5
 
     Step 2: get screen shots for each ....
+
+      need a thumbnail, sqaure img
+      and a widescreen full img 
