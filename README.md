@@ -7,7 +7,7 @@
 
 # Featuring Project 1 thru 6
 
-  Step 1: make sure we have a live link for each "front-end" project
+  Step 1A: make sure we have a live link for each "front-end" project
 
       Project 1 : Random Qoutes Generator
           Live Link:  https://pereznetworks.github.io/TechDegree-Project1/
@@ -29,9 +29,10 @@
           Live Link:  https://pereznetworks.github.io/TD-Project5/
           GitHub : https://github.com/pereznetworks/TD-Project5
 
+    Step 1B: *what to do for project 6, which is command line app*
+    *so we'll have to think about how to demo this live, online..*
       Project 6 : Build a Content Scraper for a shopping site
-          Live Link:  
-          *command line app, so we'll have to think about how to demo this live*
+          Live Link:  *??*
           GitHub : https://github.com/pereznetworks/TD-Project5
 
     Step 2: get screen shots for each ....
