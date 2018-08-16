@@ -3,7 +3,7 @@
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree  
 
     this site is built using Node.js, Express Framework,
-    and Pug for html template rendering 
+    and Pug for html template rendering
 
 
 # Featuring Projects 1 thru 6
@@ -42,4 +42,4 @@
     Step 2: get screen shots for each ....
 
       need a thumbnail, sqaure img
-      and a widescreen full img
+      and a widescreen full imgs to show each site's various pages
