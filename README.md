@@ -3,7 +3,7 @@
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree  
 
     this site is built using Node.js, Express Framework,
-    and Pug for template rendering 
+    and Pug for html template rendering 
 
 
 # Featuring Projects 1 thru 6
