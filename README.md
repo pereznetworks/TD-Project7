@@ -32,7 +32,7 @@
 
     Step 1B:
 
-      what to do for project 6, which is command line app
+      what to do for project 6, which is command line node.js app
         so we'll have to think about how to demo this live, online..
 
       Project 6 : Build a Content Scraper for a shopping site
