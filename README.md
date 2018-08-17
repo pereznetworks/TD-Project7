@@ -30,16 +30,19 @@
           Live Link:  https://pereznetworks.github.io/TD-Project5/
           GitHub : https://github.com/pereznetworks/TD-Project5
 
-    Step 1B:
-
-      what to do for project 6, which is command line node.js app
-        so we'll have to think about how to demo this live, online..
-
+    Step 1B:  What to do for project 6, which is command line node.js app
       Project 6 : Build a Content Scraper for a shopping site
           Live Link:  ??
           GitHub : https://github.com/pereznetworks/TD-Project6
+
+    Step 1C:
+
+      All Projects QA checked and all shined up for display
 
     Step 2: get screen shots for each ....
 
       need a thumbnail, sqaure img
       and a widescreen full imgs to show each site's various pages
+
+      have images for Project 1
+      working on images for Project 2
