@@ -6,11 +6,11 @@
     and Pug for html template rendering
 
 
-# Featuring Projects 1 thru 6
+# Featuring Projects 1 thru 5
 
     Step 1A: make sure we have a live link for each "front-end" project
 
-      Project 1 : Random Qoutes Generator
+      Project 1 : Random Quotes Generator
           Live Link:  https://pereznetworks.github.io/TechDegree-Project1/
           GitHub : https://github.com/pereznetworks/TechDegree-Project1
 
@@ -30,19 +30,11 @@
           Live Link:  https://pereznetworks.github.io/TD-Project5/
           GitHub : https://github.com/pereznetworks/TD-Project5
 
-    Step 1B:  What to do for project 6, which is command line node.js app
-      Project 6 : Build a Content Scraper for a shopping site
-          Live Link:  ??
-          GitHub : https://github.com/pereznetworks/TD-Project6
-
-    Step 1C:
+    Step 1C: QA Front-end Projects
 
       All Projects QA checked and all shined up for display
 
-    Step 2: get screen shots for each ....
+    Step 2: have screen shots for all front-end Projects 1 - 5
 
-      need a thumbnail, sqaure img
       and a widescreen full imgs to show each site's various pages
-
-      have images for Project 1
-      working on images for Project 2
+        not featuring Project 6, as it has no front-end
