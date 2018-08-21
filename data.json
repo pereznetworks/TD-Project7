@@ -7,7 +7,7 @@
       "technologies":["JavaScript", "Data Structures", "CSS Layout", "Dynamic HTML"],
       "live_link":"https://pereznetworks.github.io/TechDegree-Project1/",
       "github_link":"https://github.com/pereznetworks/TechDegree-Project1",
-      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+      "image_urls":["project1/main-550x550.jpg", "project1/inApp-1200x550-1.jpg", "project1/inApp-1200x550-2.jpg", "project1/inApp-1200x550-3.jpg"]
     },
     {
       "id":1,
@@ -16,7 +16,7 @@
       "technologies":["jQuery", "Event Driven UI", "Pagination", "Content Filter"],
       "live_link":"https://pereznetworks.github.io/TechDegree-Project2/",
       "github_link":"https://github.com/pereznetworks/TechDegree-Project2",
-      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg", "img/inApp-1200x550-4.jpg"]
+      "image_urls":["project2/main-550x550.jpg", "project2/inApp-1200x550-1.jpg", "project2/inApp-1200x550-2.jpg", "project2/inApp-1200x550-3.jpg", "project2/inApp-1200x550-4.jpg"]
     },
     {
       "id":2,
@@ -25,7 +25,7 @@
       "technologies": ["DOM Manipulation", "HTML Forms", "Input Validation", "Reg Exp"],
       "live_link":"https://pereznetworks.github.io/TD-Project3/",
       "github_link":"https://github.com/pereznetworks/TD-Project3",
-      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+      "image_urls":["project3/main-550x550.jpg", "project3/inApp-1200x550-1.jpg", "project3/inApp-1200x550-2.jpg", "project3/inApp-1200x550-3.jpg"]
     },
     {
       "id":3,
@@ -34,7 +34,7 @@
       "technologies":["JavaScript module-pattern", "IIFE", "data-modeling", "object-oriented programming"],
       "live_link":"https://pereznetworks.github.io/TD-Project4/",
       "github_link":"https://github.com/pereznetworks/TD-Project4",
-      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg", "img/inApp-1200x550-4.jpg", "img/inApp-1200x550-5.jpg"]
+      "image_urls":["project4/main-550x550.jpg", "project4/inApp-1200x550-1.jpg", "project4/inApp-1200x550-2.jpg", "project4/inApp-1200x550-3.jpg", "project4/inApp-1200x550-4.jpg", "project4/inApp-1200x550-5.jpg"]
     },
     {
       "id":4,
@@ -43,7 +43,7 @@
       "technologies":["HTML CSS Layout", "HTTP Get Requests", "Fetch API", "JavaScript Promises and Asychronous functions"],
       "live_link":"https://pereznetworks.github.io/TD-Project5/",
       "github_link":"https://github.com/pereznetworks/TD-Project5",
-      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+      "image_urls":["project5/main-550x550.jpg", "project5/inApp-1200x550-1.jpg", "project5/inApp-1200x550-2.jpg", "project5/inApp-1200x550-3.jpg"]
     }
   ]
 }

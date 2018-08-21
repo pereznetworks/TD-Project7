@@ -7,8 +7,12 @@
 
 // require express framework module and create an express app object
     const express = require('express');
-    const projectData = require('./data.json');
     const app = express();
+// require project and profile data
+    const portfolio = {}
+    portfolio.projects = require('./data.json').projects;
+    portfolio.profile = require('./profile.json').profile;
+
 
 // pug, .set method, view engine, beginning to implement html templates ...
     app.set('view engine', 'pug');
@@ -16,10 +20,33 @@
     app.use('/static', express.static('public'));
     app.use('/img', express.static('img'));
 
+// //import and use express routes
+//     const mainRoutes = require('./routes');
+//     app.use(mainRoutes);
+
+// // custom error handling
+//     app.use((req, res, next) => {  // custom 404 not found page
+//         const err = new Error('Not Found');
+//         err.status = 404;
+//         next(err);
+//     });
+//
+//     app.use((err, req, res, next) => { // custom error handler
+//         res.locals.error = err;
+//         res.status(err.status);
+//         res.render('error');
+//     });
+
 // using the .get method to setup simple routes
     app.get('/', (req, res) => {
-        res.render( 'index' );
-        message.log( message.status.home );
+        res.render( 'index', portfolio);
+        // { profile: [{heading: 'My Cool Apps', portfolio_desc: 'A portfolio of my cool apps'}]}
+        console.log(portfolio.profile[0].heading);
+        console.log(portfolio.profile[0].portfolio_desc);
+        console.log(portfolio.projects[0].project_name);
+        console.log(portfolio.projects[0].description);
+        console.log(portfolio.projects[0].image_urls[0]);
+
     });
 
     app.get('/about', (req, res) => {

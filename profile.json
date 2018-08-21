@@ -1,0 +1,11 @@
+{
+  "profile": [
+      {
+        "name": "Daniel Perez",
+        "heading": "Current Release Front-End Prpojects",
+        "portfolio_desc": "Here are some of my latest Front-End Projects",
+        "elavator_pitch": "I am Full-Stack JavaScript Developer. I can create, enhance, debug websites. I love front-end user-interfaces and server-side code. From data-validation, user-sign-on, data-encryption to progressive-enhancement of web-pages, I got the skills you need.",
+        "image_url": "/img/profilePic/dan-lili-550x350.jpg"
+      }
+  ]
+}
