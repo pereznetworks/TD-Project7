@@ -54,6 +54,11 @@
         message.log( message.status.about );
     });
 
+    app.get('/projects', (req, res) => {
+        res.render( 'project' );
+        message.log( message.status.projects );
+    });
+
 // starting a simple web server, listen port 3000
     app.listen(3000, () => {
         message.log( message.status.running );

@@ -8,7 +8,8 @@ const html = {
 const status = {
     running: 'running on local port 3000',
     home: 'request for home pg, sending...',
-    about: 'request for about pg, sending...'
+    about: 'request for about pg, sending...',
+    projects: 'request for a project pg, sending...'
 }
 
 function log(msg){
