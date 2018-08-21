@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id":0,
+      "project_name": "Random Qoute Generator",
+      "description":"A web page that displays categorized, tagged random qoutes.",
+      "technologies":["JavaScript", "Data Structures", "CSS Layout", "Dynamic HTML"],
+      "live_link":"https://pereznetworks.github.io/TechDegree-Project1/",
+      "github_link":"https://github.com/pereznetworks/TechDegree-Project1",
+      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+    },
+    {
+      "id":1,
+      "project_name": "Pagination & Content Filter",
+      "description":"Improving an web page through progressive enhancement.",
+      "technologies":["jQuery", "Event Driven UI", "Pagination", "Content Filter"],
+      "live_link":"https://pereznetworks.github.io/TechDegree-Project2/",
+      "github_link":"https://github.com/pereznetworks/TechDegree-Project2",
+      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg", "img/inApp-1200x550-4.jpg"]
+    },
+    {
+      "id":2,
+      "project_name": "Build an Interactive Form",
+      "description":"Enhancing a form so that it is engaging, interactive.",
+      "technologies": ["DOM Manipulation", "HTML Forms", "Input Validation", "Reg Exp"],
+      "live_link":"https://pereznetworks.github.io/TD-Project3/",
+      "github_link":"https://github.com/pereznetworks/TD-Project3",
+      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+    },
+    {
+      "id":3,
+      "project_name": "A Tic Tac Toe game",
+      "description":"Build a game, using module-pattern and IIFE, data-modeling, object-oriented programming.",
+      "technologies":["JavaScript module-pattern", "IIFE", "data-modeling", "object-oriented programming"],
+      "live_link":"https://pereznetworks.github.io/TD-Project4/",
+      "github_link":"https://github.com/pereznetworks/TD-Project4",
+      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg", "img/inApp-1200x550-4.jpg", "img/inApp-1200x550-5.jpg"]
+    },
+    {
+      "id":4,
+      "project_name": "Use a Public API to Create an Employee Directory",
+      "description":"Use a Public API to Create an Employee Directory",
+      "technologies":["HTML CSS Layout", "HTTP Get Requests", "Fetch API", "JavaScript Promises and Asychronous functions"],
+      "live_link":"https://pereznetworks.github.io/TD-Project5/",
+      "github_link":"https://github.com/pereznetworks/TD-Project5",
+      "image_urls":["img/main.jpg", "img/inApp-1200x550-1.jpg", "img/inApp-1200x550-2.jpg", "img/inApp-1200x550-3.jpg"]
+    }
+  ]
+}
