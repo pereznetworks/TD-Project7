@@ -1,6 +1,8 @@
 // app.js - main js for Static Porfolio Site to show off my projets
 
 // encapsulating html snippets, status vars and a log method ...
+// will use this to setup error handling
+// will need to setup pug template to render html snippets
     const message = require('./routes/message.js');
 
 // require express framework module and create an express app object
@@ -12,9 +14,9 @@
     app.set('view engine', 'pug');
 // set static stylesheets and html rendering engine
     app.use('/static', express.static('public'));
+    app.use('/img', express.static('img'));
 
-// using the .get method to setup 2 simple routes
-// will need to remove these once actual routes are set up..
+// using the .get method to setup simple routes
     app.get('/', (req, res) => {
         res.render( 'index' );
         message.log( message.status.home );
