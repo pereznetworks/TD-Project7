@@ -2,7 +2,7 @@
   "projects": [
     {
       "id":0,
-      "project_name": "Random Qoute Generator",
+      "project_name": "Random Quote Generator",
       "description":"A web page that displays categorized, tagged random qoutes.",
       "technologies":["JavaScript", "Data Structures", "Dynamic HTML", "CSS Layout"],
       "live_link":"https://pereznetworks.github.io/TechDegree-Project1/",

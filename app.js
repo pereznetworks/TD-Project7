@@ -29,7 +29,7 @@
 
 // route for about page
     app.get('/about', (req, res, next) => {
-        res.render( 'about' );
+        res.render( 'about', portfolio.profile[0]);
         message.log( message.status.about );
         next();
     });
