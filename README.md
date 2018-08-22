@@ -7,15 +7,11 @@
 
 # COMPLETE
 
-    STEP 1 - 3 COMPLETE
-
-    STEP 4: Static routes and index, main pg, rendering complete
-      We have live site
+    STEP 1 - 5 COMPLETE
 
 # NEXT UP:
 
-    STEP 4: Dynamic Routes for Project Pages
-
+    STEP 6 and 7 : error handler and implement paths module
 
 # Featuring Projects 1 thru 5
 
@@ -60,9 +56,9 @@
 
       dynamic routes for project pages
 
-      error handling
-
-    Step 5: find a way to include use of node.js path module
-
-    STEP 6: verify rendering for static, index and about,
+    STEP 5: verify rendering for static, index and about,
       as well as dynamic routes, for project Pages
+
+    STEP 6: error handling
+
+    Step 7: find a way to include use of node.js path module
