@@ -21,11 +21,10 @@ block content
 
       //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
 
-      //- Here's what the Pug for each project example should look like.
+      //- Here's what the Pug for each project example should look like. a(href=`/projects`)
 
       each item in projects
         .cell
-          //- a(href=`${item.id}`)
-          a(href=`\projects`)
+          a(href=`/projects/${item.id}`)
             img.thumbnail(src=`/img/${item.image_urls[0]}`)
             h5= item.project_name
