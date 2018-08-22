@@ -25,6 +25,7 @@ block content
 
       each item in projects
         .cell
-          a(href=`${item.id}`)
+          //- a(href=`${item.id}`)
+          a(href=`\projects`)
             img.thumbnail(src=`/img/${item.image_urls[0]}`)
             h5= item.project_name

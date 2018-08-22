@@ -62,6 +62,12 @@
         next();
     });
 
+    app.get('/projects', (req, res, next) => {
+        res.render( 'project' );
+        message.log( message.status.projects );
+        next();
+    });
+
 // starting a simple web server, listen port 3000
     app.listen(3000, () => {
         message.log( message.status.running );
