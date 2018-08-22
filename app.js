@@ -38,7 +38,7 @@
 //     });
 
 // using the .get method to setup simple routes
-    app.get('/', (req, res) => {
+    app.get('/', (req, res, next) => {
         res.render( 'index', portfolio);
         // { profile: [{heading: 'My Cool Apps', portfolio_desc: 'A portfolio of my cool apps'}]}
         console.log(portfolio.profile[0].heading);
@@ -46,17 +46,20 @@
         console.log(portfolio.projects[0].project_name);
         console.log(portfolio.projects[0].description);
         console.log(portfolio.projects[0].image_urls[0]);
+        next();
 
     });
 
-    app.get('/about', (req, res) => {
+    app.get('/about', (req, res, next) => {
         res.render( 'about' );
         message.log( message.status.about );
+        next();
     });
 
-    app.get('/projects', (req, res) => {
-        res.render( 'project' );
+    app.param('id', (req, res, next, id) => {
+        res.render( 'project', portfolio.projects[id] );
         message.log( message.status.projects );
+        next();
     });
 
 // starting a simple web server, listen port 3000
