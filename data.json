@@ -4,7 +4,7 @@
       "id":0,
       "project_name": "Random Qoute Generator",
       "description":"A web page that displays categorized, tagged random qoutes.",
-      "technologies":["JavaScript", "Data Structures", "CSS Layout", "Dynamic HTML"],
+      "technologies":["JavaScript", "Data Structures", "Dynamic HTML", "CSS Layout"],
       "live_link":"https://pereznetworks.github.io/TechDegree-Project1/",
       "github_link":"https://github.com/pereznetworks/TechDegree-Project1",
       "image_urls":["project1/main-550x550.jpg", "project1/inApp-1200x550-1.jpg", "project1/inApp-1200x550-2.jpg", "project1/inApp-1200x550-3.jpg"]
@@ -13,7 +13,7 @@
       "id":1,
       "project_name": "Pagination & Content Filter",
       "description":"Improving an web page through progressive enhancement.",
-      "technologies":["jQuery", "Event Driven UI", "Pagination", "Content Filter"],
+      "technologies":["Event Driven UI", "Pagination", "Content Filter", "jQuery"],
       "live_link":"https://pereznetworks.github.io/TechDegree-Project2/",
       "github_link":"https://github.com/pereznetworks/TechDegree-Project2",
       "image_urls":["project2/main-550x550.jpg", "project2/inApp-1200x550-1.jpg", "project2/inApp-1200x550-2.jpg", "project2/inApp-1200x550-3.jpg", "project2/inApp-1200x550-4.jpg"]
