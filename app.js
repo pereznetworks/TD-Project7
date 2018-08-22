@@ -1,6 +1,7 @@
 // app.js - main js for Static Porfolio Site to show off my projets
 
-// require express framework module and create an express app object
+// require path module, express framework module and create an express app object
+    const path = require('path');
     const express = require('express');
     const app = express();
 
@@ -18,8 +19,10 @@
     app.set('view engine', 'pug');
 
 // set static stylesheets and html rendering engine
-    app.use('/static', express.static('public'));
-    app.use('/img', express.static('img'));
+    app.use('/static', express.static(path.join('./', 'public')));
+    app.use('/img', express.static(path.join('./','img')));
+    // app.use('/static', express.static('public'));
+    // app.use('/img', express.static('img'));
 
 // route for main page
     app.get('/', (req, res, next) => {

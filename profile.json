@@ -8,8 +8,9 @@
         "skills": ["JavaScript", "jQuery", "Node.js", "Express", "Pug", "http/https messaging", "AWS, Heroku, Container deployment", "Object-Oriented Programming", "Module Pattern", "Progressive Enchancement", "CSS3/HTML5 layout"],
         "image_url": "/img/profilePic/dan-lili-550x350.jpg",
         "contact_info": ["831-295-9600", "pereznetworks@live.com"],
-        "linkedIn": "",
-        "GitHub": ""
+        "LinkedIn": "https://www.linkedin.com/in/pereznetworks/",
+        "GitHub": "https://github.com/pereznetworks",
+        "Twitter": "https://twitter.com/pereznetworks"
       }
   ]
 }
