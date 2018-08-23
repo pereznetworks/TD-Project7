@@ -15,53 +15,51 @@ app.use('/img', express.static(path.join('./','img')));
 
 app.get('/', (req, res, next) => {
   res.render( 'index', portfolio);
-  next('route');
+  next();
 });
 
 app.get('/about', (req, res, next) => {
   message.log( message.status.about );
   res.render( 'about', portfolio.profile[0]);
-  next('route');
+  next();
 });
 
 app.param('id', (req, res, next, id) => {
-if (id < portfolio.projects.length ) {
-  message.log( message.status.projects);
-  console.log(portfolio.projects[id].project_name);
-  res.render( 'project', portfolio.projects[id] );
-  next('route');
-}
+  if (id < portfolio.projects.length ) {
+      message.log( message.status.projects);
+      console.log(portfolio.projects[id].project_name);
+      res.render( 'project', portfolio.projects[id] );
+      next();
+  } else {
+    next(err);
+  }
 })
 
 app.get('/projects/:id', (req, res, next, id) => {
-  next('route');
+  // const x = portfolio.projects.length - 1;
+  const validProjectsId = /[/projects]\w+/[0-4]/g
+  if (req.url.match(validProjectsId)){
+     next();
+  } else {
+    next(err);
+  }
 });
-
 
 app.get('/projects', (req, res, next) => {
   res.render( 'projects', portfolio);
-  next('route');
+  next();
 });
 
-app.use((req, res, next) => {
-  console.log(req.url);
-  if (req.url !== '/' && req.url !== '/about' && req.url !== '/projects' && req.url !== '/projects/0' && req.url !== '/projects/1' && req.url !== '/projects/2' && req.url !== '/projects/3' && req.url !== '/projects/4') {
-    const err = new Error();
-    next(err);
-  } else {
-    next('route');
-  }
-
+app.get((req, res, next) => {
+  const err = new Error(`Oops, excuse us, we can't find that page or path`);
+  next(err);
 });
 
 app.use((err, req, res, next) => {
-  console.log(req.url);
-  if (req.url !== '/' && req.url !== '/about' && req.url !== '/projects' && req.url !== '/projects/0' && req.url !== '/projects/1' && req.url !== '/projects/2' && req.url !== '/projects/3' && req.url !== '/projects/4') {
-      err.status = `Excuse us! We're so sorry.`;
-      err.msg = 'It seems there is no such page or path';
-      console.log(`\nerror is: ${err.status}\nmessage is: ${err.msg}\n`);
-      res.render('error', err);
-    }
+  err.status = `Excuse us! We're so sorry.`;
+  err.msg = `It seems we can't that page or path`;
+  console.log(`\nerror is: ${err.status}\nmessage is: ${err.msg}\n`);
+  res.render('error', err);
 });
 
 app.listen(3000, () => {
