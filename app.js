@@ -53,6 +53,24 @@
         next();
     });
 
+// custom error handling
+    // app.use((req, res, next) => {  // custom 404 not found page
+    //     const error = new Error;
+    //     next(err);
+    // });
+
+    app.use((req, res, next) => { // custom error handler
+        // res.locals.error = err;
+        // res.status(err.status);
+        // const error = new Error('Excuse us, that page or path is not found');
+        // error.status = 404;
+        const err = new Error('Excuse us, that page or path is not found');
+        err.status = 404;
+        err.msg = 'Excuse us, that page or path is not found';
+        console.log(`\nerror is: ${err.status}\nmessage is: ${err.msg}\n`);
+        console.dir(err);
+        res.render('error', err);
+    });
 // starting a simple web server, listen port 3000
     app.listen(3000, () => {
         message.log( message.status.running );
@@ -70,17 +88,18 @@
     // // import and use express routes
     //     const mainRoutes = require('./routes');
     //     app.use(mainRoutes);
+    // handling error if a number greater than length of projects.
+    
+    if (id < portfolio.projects.length ) {
+      const err = new Error('Excuse us, that page or path is not found');
+      err.status = 404;
+      err.msg = 'Excuse us, that page or path is not found';
+      next(err);
+    } else {
+      message.log( message.status.projects );
+      console.log(portfolio.projects[id].project_name);
+      res.render( 'project', portfolio.projects[id] );
+      next(id);
+    }
 
-    // // custom error handling
-    //     app.use((req, res, next) => {  // custom 404 not found page
-    //         const err = new Error('Not Found');
-    //         err.status = 404;
-    //         next(err);
-    //     });
-    //
-    //     app.use((err, req, res, next) => { // custom error handler
-    //         res.locals.error = err;
-    //         res.status(err.status);
-    //         res.render('error');
-    //     });
     */
