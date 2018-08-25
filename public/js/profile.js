@@ -1,6 +1,5 @@
-{
-  "profile": [
-      {
+
+const profile = {
         "name": "Daniel Perez",
         "title": "Engineer and Software Developer",
         "bio": "I am a IT Engineer, turned Software Developer. This 'portfolio' site showcases some of my recent projects. Check them out or click on 'learn more' to learn more about me.",
@@ -13,6 +12,6 @@
         "LinkedIn": "https://www.linkedin.com/in/pereznetworks/",
         "GitHub": "https://github.com/pereznetworks",
         "Twitter": "https://twitter.com/pereznetworks"
-      }
-  ]
-}
+};
+
+module.exports.profile = profile;

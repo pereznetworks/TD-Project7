@@ -12,13 +12,13 @@ portfolio.profile = require('../profile.json').profile;
 
 console.log('so we are in the index router');
 
-  router.get('/', (req, res) => {
+  router.get('/', (req, res, next) => {
     message.log( message.status.home );
     res.render( 'index', portfolio);
     next();
   });
 
-  router.get('/about', (req, res) => {
+  router.get('/about', (req, res, next) => {
     message.log( message.status.about );
     res.render( 'about', portfolio.profile[0]);
     next();
