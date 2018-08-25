@@ -26,10 +26,12 @@ router.param('id', (req, res, next, id) => {
 });
 
 router.get('/projects/:id', (req, res, next, id) => {
+  next();
 });
 
 router.get('/projects', (req, res) => {
   res.render( 'projects', portfolio);
+  next();
 });
 
 // exporting router so it can be used by express' app.js
