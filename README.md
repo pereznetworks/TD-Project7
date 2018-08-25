@@ -7,12 +7,12 @@
 
 # COMPLETE
 
-    STEP 1 - 5 COMPLETE
+    STEP 1 - 7 COMPLETE
 
 # NEXT UP:
 
-    STEP 6 and 7 : error handler and implement paths module
-
+    STEP 8: Review Projects Requirements again and Exceeds
+    
 # Featuring Projects 1 thru 5
 
     Step 1A: make sure we have a live link for each "front-end" project
@@ -62,3 +62,5 @@
     STEP 6: error handling
 
     Step 7: find a way to include use of node.js path module
+
+    STEP 8: Review Projects Requirements again and Exceeds
