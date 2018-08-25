@@ -17,22 +17,19 @@ router.param('id', (req, res, next, id) => {
       message.log( message.status.projects);
       console.log(portfolio.projects[id].project_name);
       res.render( 'project', portfolio.projects[id] );
-      next('route');
   } else {
-    const err = new Error(`We're sorry, we cant find a project page with that id`);
-    err.status = 404;
-    err.msg = `We're sorry, we cant find a project page with that id`;
-    next(err);
+      const err = new Error(`We're sorry, we cant find a project page with that id`);
+      err.status = 404;
+      err.msg = `We're sorry, we cant find a project page with that id`;
+      res.render(`error`, err);
   }
 });
 
 router.get('/projects/:id', (req, res, next, id) => {
-  next('route');
 });
 
-router.get('/projects', (req, res, next) => {
+router.get('/projects', (req, res) => {
   res.render( 'projects', portfolio);
-  next('route');
 });
 
 // exporting router so it can be used by express' app.js

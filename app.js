@@ -25,17 +25,18 @@ app.use('/projects', projectsRouter);
 app.use('/projects/:id', projectsRouter);
 
 app.use((req, res, next) => {
-    const err = new Error(`Oops, excuse us, we can't find that page or path`);
-    err.status = `404`;
-    err.msg = `It seems we can't find that page or path`;
-    next(err);
+      const err = new Error(`Oops, excuse us, we can't find that page or path`);
+      err.status = 404;
+      err.msg = `It seems we can't find that page or path`;
+      next(err);
 });
 
 app.use((err, req, res, next) => {
-    res.status(err.status);
-    res.locals.error = err;
-    res.render('error', err);
-    err.status = 0;
+    if (err.status == 404 ){
+      res.status(err.status);
+      res.render('error', err);
+      err.status = 0;
+    }
 });
 
 app.listen(3000, () => {
