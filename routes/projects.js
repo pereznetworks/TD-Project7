@@ -13,7 +13,7 @@ portfolio.profile = require('../profile.json').profile;
 console.log('so we are in the projects router');
 
 router.param('id', (req, res, next, id) => {
-  if (id < portfolio.projects.length ) {
+  if (id < portfolio.projects.length && id.length < 2) {
       message.log( message.status.projects);
       console.log(portfolio.projects[id].project_name);
       res.render( 'project', portfolio.projects[id] );
