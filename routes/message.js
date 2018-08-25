@@ -1,15 +1,16 @@
 // message.js - messages, html snippets and a log function
 
-const html = {
-    home: `<h1>Testing Express Framework</h1>`,
-    hello: `<h1>Testing..</h1><p><strong>will be removing after initial testing...</strong></p>`,
-}
-
 const status = {
     running: 'running on local port 3000',
     home: 'request for home pg, sending...',
     about: 'request for about pg, sending...',
-    projects: 'request for a project pg, sending...'
+    projects: 'request for a project pg, sending...',
+    routeStatus: `\nA page or path was requested, but there's been a problem.\nError code:`,
+    projectStatus: `\nLooks like a project page was requested. But there's been a problem:\nError code:`
+}
+
+function logError(msg, code, msgCode){
+    console.log(`${msg} ${code}: ${msgCode}\n`);
 }
 
 function log(msg){
@@ -18,5 +19,5 @@ function log(msg){
 
 // module export for log method and html, status object
 module.exports.log = log;
-module.exports.html = html;
+module.exports.logError = logError;
 module.exports.status = status;

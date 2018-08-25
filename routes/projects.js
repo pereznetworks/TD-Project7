@@ -21,6 +21,8 @@ router.param('id', (req, res, next, id) => {
       const err = new Error(`We're sorry, we cant find a project page with that id`);
       err.status = 404;
       err.msg = `We're sorry, we cant find a project page with that id`;
+      //console.log(`\nLooks like a project page was requested. But there's been a problem:\nError code: ${err.status}: ${err.msg}\n`);
+      message.logError(message.status.projectStatus, err.status, err.msg);
       res.render(`error`, err);
   }
 });

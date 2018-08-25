@@ -33,6 +33,8 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
     if (err.status == 404 ){
+      // console.log(`\nA page or path was requested, but there's been a problem.\nError: ${err.status}: ${err.msg}\n`);
+      message.logError(message.status.routeStatus, err.status, err.msg);
       res.status(err.status);
       res.render('error', err);
       err.status = 0;
