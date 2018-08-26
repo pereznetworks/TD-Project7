@@ -20,7 +20,7 @@ console.log('so we are in the index router');
 
   router.get('/about', (req, res, next) => {
     message.log( message.status.about );
-    res.render( 'about', portfolio.profile[0]);
+    res.render( 'about', portfolio);
     next();
   });
 

@@ -16,7 +16,7 @@ router.param('id', (req, res, next, id) => {
   if (id < portfolio.projects.length && id.length < 2) {
       message.log( message.status.projects);
       console.log(portfolio.projects[id].project_name);
-      res.render( 'project', portfolio.projects[id] );
+      res.render( 'project', portfolio.projects[id]);
   } else {
       const err = new Error();
       err.status = 404;
