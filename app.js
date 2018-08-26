@@ -25,7 +25,9 @@ app.use('/projects', projectsRouter);
 app.use('/projects/:id', projectsRouter);
 
 app.use((req, res, next) => {
-      const err = new Error(`Oops, excuse us, we can't find that page or path`);
+
+      //const cErr =  Error.captureStackTrace(myObject);
+      const err = new Error();
       err.status = 404;
       err.msg = `It seems we can't find that page or path`;
       next(err);
@@ -34,8 +36,10 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     if (err.status == 404 ){
       // console.log(`\nA page or path was requested, but there's been a problem.\nError: ${err.status}: ${err.msg}\n`);
-      message.logError(message.status.routeStatus, err.status, err.msg);
+      message.logError(message.status.routeStatus, err.status, err.msg, err.stack);
+      //console.dir(err.stack);
       res.status(err.status);
+      res.locals.error = err;
       res.render('error', err);
       err.status = 0;
     }

@@ -9,8 +9,8 @@ const status = {
     projectStatus: `\nLooks like a project page was requested. But there's been a problem:\nError code:`
 }
 
-function logError(msg, code, msgCode){
-    console.log(`${msg} ${code}: ${msgCode}\n`);
+function logError(msg, code, msgCode, stack){
+    console.log(`${msg} ${code}: ${msgCode}\n${stack}`);
 }
 
 function log(msg){

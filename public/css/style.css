@@ -29,7 +29,6 @@ h1,h2,h3,h4,h5,p{
 .text-light{
   color: #666;
 }
-
 .button{
   background-color: #333;
 }
@@ -147,4 +146,12 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+/* added by yours truly */
+ .portfolio-project .errorSmallFont {
+  font-size: .5em;
+}
+ .portfolio-project .errorNoPadding {
+  padding-bottom: 1px;
 }
