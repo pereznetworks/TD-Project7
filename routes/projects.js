@@ -20,12 +20,12 @@ router.param('id', (req, res, next, id) => {
       console.log(res.locals.projects[id].project_name);
       res.render( 'project', res.locals.projects[id]);
   } else {
-      const err = new Error();
-      err.status = 404;
-      err.message = `We're sorry, we cant find a project page with that id`;
-      message.logError(message.status.projectStatus, err.status, err.message, err.stack);
-      res.locals.err = err;
-      res.render(`error`, err);
+      const projectsErr = new Error();
+      projectsErr.status = 404;
+      projectsErr.message = `We're sorry, we cant find a project page with that id`;
+      message.logError(message.status.projectStatus, projectsErr.status, projectsErr.message, projectsErr.stack);
+      res.locals.projectsErr = projectsErr;
+      res.render(`errorProjects`, projectsErr);
   }
 });
 
