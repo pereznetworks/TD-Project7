@@ -34,13 +34,11 @@ router.get('/projects/:id', (req, res, next, id) => {
 });
 
 router.get('/project', (req, res, next) => {
-  res.redirect('/projects');
+    res.redirect('/');
 });
 
 router.get('/projects', (req, res, next) => {
-  res.locals = router.locals;
-  res.render( 'projects', res.locals);
-  next();
+    res.redirect('/');
 });
 
 // exporting router so it can be used by express' app.js
