@@ -1,31 +1,40 @@
+// require modules, create an express app
 const path = require('path');
 const express = require('express');
 const app = express();
 
+// import express routers
 const indexRouter = require('./routes/index.js');
 const projectsRouter = require('./routes/projects.js');
 
+// import json data
 const portfolio = {}
 portfolio.projects = require('./data.json').projects;
 portfolio.profile = require('./profile.json').profile;
 app.locals = portfolio;
 
+// my own custom console and error logging module
 const message = require('./routes/message.js');
 
+// setting html rendering engine to pug
 app.set('view engine', 'pug');
 
+// telling the express app to use specific internal folder paths
 app.use('/static', express.static(path.join('./', 'public')));
 app.use('/img', express.static(path.join('./','img')));
 app.use('/projects/static/', express.static(path.join('./', 'public')));
 
+// telling the express app which router to use for valid paths
 app.use(indexRouter);
 app.use(projectsRouter);
 app.use('/', indexRouter);
 app.use('/about', indexRouter);
 app.use('/project', projectsRouter);
 app.use('/projects', projectsRouter);
+app.use('/project/:id', projectsRouter);
 app.use('/projects/:id', projectsRouter);
 
+// telling express what to use for any paths that are not matched above
 app.use((req, res, next) => {
         const err = new Error();
         err.status = 404;
@@ -33,6 +42,7 @@ app.use((req, res, next) => {
         next(err);
 });
 
+// an error handler
 app.use((err, req, res, next) => {
     const routeErr = err;
     if (err.status == 404 ){

@@ -2,15 +2,16 @@
 const express = require('express');
 const router = express.Router();
 
+// importing my custom console and error logging module
 const message = require('../routes/message.js');
 
+// importing json data
 const portfolio = {}
 portfolio.projects = require('../data.json').projects;
 portfolio.profile = require('../profile.json').profile;
 router.locals = portfolio
-// routes
 
-console.log('so we are in the index router');
+// 2 routes
 
   router.get('/', (req, res, next) => {
     message.log( message.status.home );
@@ -27,6 +28,6 @@ console.log('so we are in the index router');
   });
 
 
-// exporting router so it can be used by express' app.js
+// exporting 'router' so it can be used by the express app
 
 module.exports = router;
