@@ -155,3 +155,38 @@ a:hover{
  .portfolio-project .errorNoPadding {
   padding-bottom: 1px;
 }
+
+.portfolio-index .thumbnail:hover {
+  outline:none;
+  box-shadow:5px 5px #00004c;
+}
+
+.portfolio-index .thumbnail:active{
+  outline:none;
+  transform: translateY(1px);
+  box-shadow:1px 1px #00004c;
+}
+
+.js-off-canvas-overlay {
+  background: rgba(169, 169, 169, 0.25);
+}
+
+.portfolio-me {
+ background: #00004c;
+}
+
+.portfolio-me:hover{
+  background-color: #111;
+}
+
+.title-bar {
+ background: #00004c;
+}
+
+.title-bar:hover{
+  background-color: #111;
+}
+
+.button {
+  background: #00004c;
+}
