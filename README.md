@@ -103,6 +103,4 @@
 
       Exceeds Step 3: custom styles added to bottom of css/style.css
 
-    STEP 9: Deploy to Heroku
-
-    STEP 10: FINAL QA before submit
+    STEP 9: Deployed to Heroku
