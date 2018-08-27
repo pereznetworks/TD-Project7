@@ -23,7 +23,7 @@
 
         ./importData.js : to import project, profile json data
 
-        ./profile.json : personal and contact info data used in about.pug and sidebar in layout.pug
+        ./profile.json : personal and contact info data used in layout.pug, about.pug and sidebar in layout.pug
 
         ./data.json : project data used in part through-out all pug files and in project.pug and projects.pug
 
@@ -33,7 +33,7 @@
 
         ./img/profilePic : profile img and favicon img
 
-        ./img/project1 through 5 : screen-shots of tech-degree projects 1 thru 5 
+        ./img/project1 through 5 : screen-shots of tech-degree projects 1 thru 5
 
 # COMING SOON:
 
