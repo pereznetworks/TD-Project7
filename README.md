@@ -15,9 +15,9 @@
 
     using ./importData.js to import json data  
 
-# NEXT UP:
+    deployed on Heroku: https://dap-dev.herokuapp.com
 
-    STEP 9: Deploy to Heroku
+# NEXT UP:
 
     STEP 10: Add any other projects?
 
