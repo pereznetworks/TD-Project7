@@ -5,23 +5,25 @@
     this site is built using Node.js, Express Framework,
     and Pug for html template rendering
 
+    deployed on Heroku: https://dap-dev.herokuapp.com
+
 # STATUS: PROJECT COMPLETE
 
     Requirements: complete
 
     Exceeds: all 3 complete
 
-    using ./routes/message.js for console and error logging
+    using my own custom code:
 
-    using ./importData.js to import json data  
+        ./routes/message.js for console and error logging
 
-    deployed on Heroku: https://dap-dev.herokuapp.com
+        ./importData.js to import project, profile json data  
 
-# NEXT UP:
+# COMING SOON:
 
-    STEP 10: Add any other projects?
+    Will be adding more projects.
 
-    STEP 11: FINAL QA before submit
+    implement back-end and front-end UI for adding featured projects and project data
 
 # REQUIREMENTS:
 
@@ -56,27 +58,38 @@
     Step 2: have screen shots for all front-end Projects 1 - 5
 
       and a widescreen full imgs to show each site's various pages
-      not featuring Project 6, as it has no front-end
 
     Step 3: create json data for projects and profile
 
       import to app.locals
-      using custom importData.js
+
+      using my own custom module: importData.js
+
       access data in pug templates
 
-    Step 4: set up routes for valid paths
+    Step 4: set up routes and rendering for valid paths
 
       static routes, index and about
+
       dynamic routes for project pages
 
-    STEP 5: rendering using pug for all pages
+    STEP 5: rendering for static, index and about,
 
-      pass project and profile data properties needed for various pages
-       index and about,
-       as well as dynamic routes, for project Pages complete and tested
+      project and profile data passed to pug files via res.local
+
+      project and profile data properties added to all pug files
 
     STEP 6: error handling complete and tested
-      USE
+
+      using my own custom error module: message.js
+
+      console logging of errors
+
+      different err logged and data properties and profile data passed to error.pug
+
+          when called from /projects/:id
+
+          or for invalid paths
 
     Step 7: include use of node.js path module
 
@@ -92,6 +105,4 @@
 
     STEP 9: Deploy to Heroku
 
-    STEP 10: Add any other projects?
-
-    STEP 11: FINAL QA before submit
+    STEP 10: FINAL QA before submit
