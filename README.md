@@ -5,14 +5,20 @@
     this site is built using Node.js, Express Framework,
     and Pug for html template rendering
 
-# COMPLETE
+# STATUS: PROJECT COMPLETE
 
-    STEP 1 - 7 COMPLETE
+    Requirements: complete
 
+    Exceeds: all 3 complete
+
+    using ./routes/message.js for console and error logging
+
+    using ./importData.js to import json data  
+    
 # NEXT UP:
 
     STEP 8: Review Projects Requirements again and Exceeds
-    
+
 # Featuring Projects 1 thru 5
 
     Step 1A: make sure we have a live link for each "front-end" project
@@ -47,20 +53,27 @@
       not featuring Project 6, as it has no front-end
 
     Step 3: create json data for projects and profile
-            require in app.js
+            import to app.locals
+            using custom importData.js
             access data in pug templates
 
-    Step 4: routes
+    Step 4: set up routes and rendering for valid paths
 
       static routes, index and about
 
       dynamic routes for project pages
 
-    STEP 5: verify rendering for static, index and about,
-      as well as dynamic routes, for project Pages
+    STEP 5: rendering for static, index and about,
+      as well as dynamic routes, for project Pages complete and tested
 
-    STEP 6: error handling
+    STEP 6: error handling complete and tested
 
-    Step 7: find a way to include use of node.js path module
+    Step 7: include use of node.js path module
 
-    STEP 8: Review Projects Requirements again and Exceeds
+    STEP 8: Exceeds
+
+      Exceeds Step 1: npm start launches express app
+
+      Exceeds Step 2: use error.status, error.message and error.stack properties in custom error page
+
+      Exceeds Step 3: custom styles added to bottom of css/style.css
