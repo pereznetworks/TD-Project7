@@ -2,6 +2,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // import express routers
 const indexRouter = require('./routes/index.js');
@@ -52,6 +53,6 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.listen(3000, () => {
-  message.log( message.status.running );
+app.listen(PORT, () => {
+  message.log( `${message.status.running}${PORT}` );
 });

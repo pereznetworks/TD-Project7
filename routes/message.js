@@ -1,7 +1,7 @@
 // message.js - messages, html snippets and a log function
 
 const status = {
-    running: 'running on local port 3000',
+    running: 'running on local port: ',
     home: 'request for home pg, sending...',
     about: 'request for about pg, sending...',
     projects: 'request for a project pg, sending...',

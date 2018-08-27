@@ -59,20 +59,24 @@
       not featuring Project 6, as it has no front-end
 
     Step 3: create json data for projects and profile
-            import to app.locals
-            using custom importData.js
-            access data in pug templates
 
-    Step 4: set up routes and rendering for valid paths
+      import to app.locals
+      using custom importData.js
+      access data in pug templates
+
+    Step 4: set up routes for valid paths
 
       static routes, index and about
-
       dynamic routes for project pages
 
-    STEP 5: rendering for static, index and about,
-      as well as dynamic routes, for project Pages complete and tested
+    STEP 5: rendering using pug for all pages
+
+      pass project and profile data properties needed for various pages
+       index and about,
+       as well as dynamic routes, for project Pages complete and tested
 
     STEP 6: error handling complete and tested
+      USE
 
     Step 7: include use of node.js path module
 
