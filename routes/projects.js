@@ -33,7 +33,11 @@ router.get('/projects/:id', (req, res, next, id) => {
   next();
 });
 
-router.get('/projects', (req, res) => {
+router.get('/project', (req, res, next) => {
+  res.redirect('/projects');
+});
+
+router.get('/projects', (req, res, next) => {
   res.locals = router.locals;
   res.render( 'projects', res.locals);
   next();

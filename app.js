@@ -22,6 +22,7 @@ app.use(indexRouter);
 app.use(projectsRouter);
 app.use('/', indexRouter);
 app.use('/about', indexRouter);
+app.use('/project', projectsRouter);
 app.use('/projects', projectsRouter);
 app.use('/projects/:id', projectsRouter);
 
