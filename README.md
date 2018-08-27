@@ -13,11 +13,27 @@
 
     Exceeds: all 3 complete
 
-    using my own custom code:
+    my code:
 
-        ./routes/message.js for console and error logging
+        ./app.js : main express app
 
-        ./importData.js to import project, profile json data  
+        ./routes/index.js and projects.js : routers for /, /about and /projects
+
+        ./routes/message.js : for console and error logging
+
+        ./importData.js : to import project, profile json data
+
+        ./profile.json : personal and contact info data used in about.pug and sidebar in layout.pug
+
+        ./data.json : project data used in part through-out all pug files and in project.pug and projects.pug
+
+        ./public/css/styles.css : placed my custom styles at end of styles.css
+
+        ./views/layout.pug : added my own favicon
+
+        ./img/profilePic : profile img and favicon img
+
+        ./img/project1 through 5 : screen-shots of tech-degree projects 1 thru 5 
 
 # COMING SOON:
 
