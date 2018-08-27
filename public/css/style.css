@@ -156,6 +156,10 @@ a:hover{
   padding-bottom: 1px;
 }
 
+.portfolio-breadcrumb:hover{
+  color: #00004c;
+}
+
 .portfolio-index .thumbnail:hover {
   outline:none;
   box-shadow:5px 5px #00004c;
