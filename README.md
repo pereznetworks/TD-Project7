@@ -14,14 +14,20 @@
     using ./routes/message.js for console and error logging
 
     using ./importData.js to import json data  
-    
+
 # NEXT UP:
 
-    STEP 8: Review Projects Requirements again and Exceeds
+    STEP 9: Deploy to Heroku
 
-# Featuring Projects 1 thru 5
+    STEP 10: Add any other projects?
 
-    Step 1A: make sure we have a live link for each "front-end" project
+    STEP 11: FINAL QA before submit
+
+# REQUIREMENTS:
+
+    Step 1A: Featuring Projects 1 thru 5
+
+    make sure we have a live link for each "front-end" project
 
       Project 1 : Random Quotes Generator
           Live Link:  https://pereznetworks.github.io/TechDegree-Project1/
@@ -70,10 +76,18 @@
 
     Step 7: include use of node.js path module
 
-    STEP 8: Exceeds
+# Exceeds
+
+    STEP 8: Extra features
 
       Exceeds Step 1: npm start launches express app
 
       Exceeds Step 2: use error.status, error.message and error.stack properties in custom error page
 
       Exceeds Step 3: custom styles added to bottom of css/style.css
+
+    STEP 9: Deploy to Heroku
+
+    STEP 10: Add any other projects?
+
+    STEP 11: FINAL QA before submit
