@@ -8,10 +8,7 @@ const indexRouter = require('./routes/index.js');
 const projectsRouter = require('./routes/projects.js');
 
 // import json data
-const portfolio = {}
-portfolio.projects = require('./data.json').projects;
-portfolio.profile = require('./profile.json').profile;
-app.locals = portfolio;
+app.locals = require('./importData.js');
 
 // my own custom console and error logging module
 const message = require('./routes/message.js');

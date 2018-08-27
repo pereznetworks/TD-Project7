@@ -5,11 +5,8 @@ const router = express.Router();
 // importing my custom console and error logging module
 const message = require('../routes/message.js');
 
-// importing json data
-const portfolio = {}
-portfolio.projects = require('../data.json').projects;
-portfolio.profile = require('../profile.json').profile;
-router.locals = portfolio;
+// import json data
+router.locals = require('../importData.js');
 
 // project routes
 
