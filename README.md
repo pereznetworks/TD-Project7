@@ -9,31 +9,67 @@
 
 # STATUS: PROJECT COMPLETE
 
-    Requirements: complete
+    Requirements: all requirements complete
 
     Exceeds: all 3 complete
 
-    my code:
+# COMPONENTS by file:
 
-        ./app.js : main express app
+        ./app.js :
 
-        ./routes/index.js and projects.js : routers for /, /about and /projects
+            main express app
 
-        ./routes/message.js : for console and error logging
+        ./routes/index.js and projects.js :
 
-        ./importData.js : to import project, profile json data
+            routers for /, /about and /projects
 
-        ./profile.json : personal and contact info data used in layout.pug, about.pug and sidebar in layout.pug
+        ./routes/message.js :
 
-        ./data.json : project data used in part through-out all pug files and in project.pug and projects.pug
+            for console and error logging
 
-        ./public/css/styles.css : placed my custom styles at end of styles.css
+        ./importData.js :
 
-        ./views/layout.pug : added my own favicon
+            to import project, profile json data
 
-        ./img/profilePic : profile img and favicon img
+        ./profile.json :
 
-        ./img/project1 through 5 : screen-shots of tech-degree projects 1 thru 5
+            personal and contact info data used in
+              layout.pug, about.pug and sidebar in layout.pug
+
+        ./data.json :
+
+            project data used in part through-out all pug files
+              and in project.pug and projects.pug
+
+        ./public/css/styles.css :
+
+            placed my custom styles at end of styles.css
+
+        ./views/layout.pug :
+
+            added my own favicon
+
+        ./views/project and projects.pug :
+
+            for rendering project views, add profile
+              and project data properties as needed
+
+        ./views/index.pug and about.pug :
+
+            add profile and project data properties as needed
+
+        ./views/error.pug :
+
+            for rendering custom status 404 pages
+              using error.status, error.message and error.stack properties
+
+        ./img/profilePic :
+
+            add my own profile img and favicon img
+
+        ./img/project1 through 5 :
+
+            screen-shots of tech-degree projects 1 thru 5
 
 # COMING SOON:
 
