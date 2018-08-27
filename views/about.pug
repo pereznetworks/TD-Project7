@@ -7,28 +7,28 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        h1= name
+        h1= profile.name
 
-        p.lead.text-light= heading
+        p.lead.text-light= profile.heading
 
         .portfolio-bio
-          each item in elavator_pitch
+          each item in profile.elavator_pitch
             p= item
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Skills
 
         ul
-          each item in skills
+          each item in profile.skills
             li= item
         h6 Contact Info
 
         ul
-          each item in contact_info
+          each item in profile.contact_info
             li= item
 
-        a.button.expanded(href=`${LinkedIn}` target='_blank') LinkedIn
-        a.button.expanded(href=`${GitHub}` target='_blank') GitHub
-        a.button.expanded(href=`${Twitter}` target='_blank') Twitter
+        a.button.expanded(href=`${profile.LinkedIn}` target='_blank') LinkedIn
+        a.button.expanded(href=`${profile.GitHub}` target='_blank') GitHub
+        a.button.expanded(href=`${profile.Twitter}` target='_blank') Twitter
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back

@@ -8,6 +8,7 @@ const projectsRouter = require('./routes/projects.js');
 const portfolio = {}
 portfolio.projects = require('./data.json').projects;
 portfolio.profile = require('./profile.json').profile;
+app.locals = portfolio;
 
 const message = require('./routes/message.js');
 
@@ -25,8 +26,6 @@ app.use('/projects', projectsRouter);
 app.use('/projects/:id', projectsRouter);
 
 app.use((req, res, next) => {
-
-      //const cErr =  Error.captureStackTrace(myObject);
       const err = new Error();
       err.status = 404;
       err.message = `It seems we can't find that page or path`;
@@ -35,10 +34,9 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
     if (err.status == 404 ){
-      // console.log(`\nA page or path was requested, but there's been a problem.\nError: ${err.status}: ${err.msg}\n`);
       message.logError(message.status.routeStatus, err.status, err.message, err.stack);
-      //console.dir(err.stack);
       res.status(err.status);
+      res.locals = app.locals;
       res.locals.error = err;
       res.render('error', err);
       err.status = 0;
@@ -48,3 +46,5 @@ app.use((err, req, res, next) => {
 app.listen(3000, () => {
   message.log( message.status.running );
 });
+
+module.exports.portfolio = portfolio;

@@ -7,20 +7,22 @@ const message = require('../routes/message.js');
 const portfolio = {}
 portfolio.projects = require('../data.json').projects;
 portfolio.profile = require('../profile.json').profile;
-
+router.locals = portfolio
 // routes
 
 console.log('so we are in the index router');
 
   router.get('/', (req, res, next) => {
     message.log( message.status.home );
-    res.render( 'index', portfolio);
+    res.locals = router.locals;
+    res.render( 'index', res.locals.portfolio);
     next();
   });
 
   router.get('/about', (req, res, next) => {
     message.log( message.status.about );
-    res.render( 'about', portfolio);
+    res.locals = router.locals;
+    res.render( 'about', res.locals.portfolio);
     next();
   });
 
