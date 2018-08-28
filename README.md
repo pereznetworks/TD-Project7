@@ -25,7 +25,10 @@
 
         ./routes/message.js :
 
-            for console and error logging
+            modified from Express Basics version
+              added custom msg key/values
+              and added a logErrors function
+                for console and error logging
 
         ./importData.js :
 

@@ -1,4 +1,9 @@
-// message.js - messages, html snippets and a log function
+/* modified from Express Basics version
+    added custom msg key/values
+    and added a logErrors function
+      for console and error logging */
+
+// message.js - status messages and 2 logging functions
 
 const status = {
     running: 'running on local port: ',
