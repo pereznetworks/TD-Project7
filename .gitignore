@@ -3,3 +3,4 @@ node_modules/
 
 # on macOS filesystems ignore .DS_Store
 **/.DS_Store
+npm-debug.log
