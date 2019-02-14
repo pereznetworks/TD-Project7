@@ -6,3 +6,6 @@ npm-debug.log
 
 # on macOS filesystems ignore .DS_Store
 **/.DS_Store
+
+# ignore cloned version for deployment to heroku
+gitClone/
