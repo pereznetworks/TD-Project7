@@ -1,11 +1,14 @@
 # A Portfolio of my Apps
 
-    built as part of Full Stack Java Script, Team TreeHouse Tech Degree  
+    built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
     this site is built using Node.js, Express Framework,
     and Pug for html template rendering
 
-    deployed on Heroku: https://dap-dev.herokuapp.com
+    deployed originally on Heroku: https://dap-dev.herokuapp.com
+    
+    I will expanding and updating this site and adding other projects.
+    This repo will continue to remain in this original state for posterity. =)
 
 # STATUS: PROJECT COMPLETE
 
