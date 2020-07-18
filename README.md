@@ -1,11 +1,14 @@
-# A Portfolio of Web Apps
-
-## *This will become a templator or demo project*
+# *This will become a templator or demo project*
     
    *the actual repo for my portofilo site is now a private repo, for obvious reasons =)*
    
    *the profile.json and data.json, have been "normalized", to show what kind of data should go into these files*
+   
+   *in time this readme will be edited to explain the inner-workings of a live app*
+   
+   *if/when the templator version is ready, it will be on a separate repo*
 
+# A Portfolio of Web Apps
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
     this site is built using Node.js, Express Framework,
