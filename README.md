@@ -2,7 +2,7 @@
 
 ## *This will become a templator or demo project*
     
-   *the actual repo for my portofilo site is now a private repo, for obvious reason =)*
+   *the actual repo for my portofilo site is now a private repo, for obvious reasons =)*
    
    *the profile.json and data.json, have been "normalized", to show what kind of data should go into these files*
 
