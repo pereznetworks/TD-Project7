@@ -1,4 +1,10 @@
-# A Portfolio of my Apps
+# A Portfolio of Web Apps
+
+    **This will become a templator or demo project**
+    
+   *the actual repo for my portofilo site is now a private repo, for obvious reason =)*
+   
+   *the profile.json and data.json, have been "normalized", to show what kind of data should go into these files*
 
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
