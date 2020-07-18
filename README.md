@@ -1,6 +1,6 @@
 # A Portfolio of Web Apps
 
-    **This will become a templator or demo project**
+## *This will become a templator or demo project*
     
    *the actual repo for my portofilo site is now a private repo, for obvious reason =)*
    
