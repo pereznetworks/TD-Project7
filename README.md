@@ -7,6 +7,8 @@
    *in time this readme will be edited to explain the inner-workings of a live app*
    
    *if/when the templator version is ready, it will be on a separate repo*
+   
+   *this github does not go into how to launch the app online*
 
 # A Portfolio of Web Apps
     built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
