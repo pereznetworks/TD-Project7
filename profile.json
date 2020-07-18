@@ -1,16 +1,16 @@
 {
   "profile": {
-        "name": "Daniel Perez",
-        "title": "Engineer and Software Developer",
-        "bio": "I am a IT Engineer, turned Software Developer. This 'portfolio' site showcases some of my recent projects. Check them out or click on 'learn more' to learn more about me.",
-        "heading": "Current Release Front-End Projects",
-        "portfolio_desc": "Here are some of my latest Front-End Projects",
-        "elavator_pitch": ["I am an IT Engineer, turned Full-Stack JavaScript Developer.", "I enjoy creating, enhancing, debugging websites and web apps. I design front-end user-interfaces and building back-end servers.", "From data-validation, user-sign-on, data-encryption to progressive-enhancement of web-pages, I got the skills you need to make your vision come alive."],
-        "skills": ["JavaScript", "jQuery", "Node.js", "Express", "Pug", "http/https messaging", "AWS, Heroku, Container deployment", "Object-Oriented Programming", "Module Pattern", "Progressive Enchancement", "CSS3/HTML5 layout"],
-        "image_url": "/img/profilePic/dan-lili-550x350.jpg",
-        "contact_info": ["831-295-9600", "pereznetworks@live.com"],
-        "LinkedIn": "https://www.linkedin.com/in/pereznetworks/",
-        "GitHub": "https://github.com/pereznetworks",
-        "Twitter": "https://twitter.com/pereznetworks"
+        "name": "Your Name Here",
+        "title": "A cool sounding title",
+        "bio": "A bit about youself",
+        "heading": "A title for this portfolio",
+        "portfolio_desc": "one senstence discription of your projects",
+        "elavator_pitch": ["Some you can say to a desiction maker when you only a have 1 or 2 minutes of thier attention"],
+        "skills": ["list of stuff you can do"],
+        "image_url": "include the path to a pic of yourself",
+        "contact_info": ["111-000-0000", "you@email.com"],
+        "LinkedIn": "linkedin profile",
+        "GitHub": "Github Profile",
+        "Twitter": "Twitter Profile"
       }
 }
