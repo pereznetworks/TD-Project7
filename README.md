@@ -1,175 +1,189 @@
-# *This will become a templator or demo project*
-    
-   *the actual repo for my portofilo site is now private, for obvious reasons =)*
-   
-   *the profile.json and data.json, have been "normalized", to show what kind of data should go into these files*
-   
-   *in time this readme will be edited to explain the inner-workings of a live app*
-   
-   *if/when the templator version is ready, it will be on a separate repo*
-   
-   *this github does not go into how to launch the app online*
+# ***Slowly turning this into a tutorial project***
+
+   *Out of this project, I will create several other projects.*
+
+   *the actual repo for my portfolio site is now private, for obvious reasons =)*
+
+   *the profile.json and data.json are now samples, showing the kind of data should go into these files*
+
+   *in time this readme will be edited to explain the inner-workings of a live express server and web app*
+
+   *and will include some how-to, for developers to build their own portfolio app*
+
+   *this github does not go into how to setup a hosting acct and launch the app online*
 
 # A Portfolio of Web Apps
-    built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
-    this site is built using Node.js, Express Framework,
-    and Pug for html template rendering
+- built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
-    deployed originally on Heroku: https://dap-dev.herokuapp.com
-    
-    I will expanding and updating this site and adding other projects.
-    This repo will continue to remain in this original state for posterity. =)
+- this site is built using Node.js, Express Framework, and Pug for html template rendering
 
-# STATUS: PROJECT COMPLETE
+- built from this code : my current portfolio site hosted on Heroku: https://dap-dev.herokuapp.com
 
-    Requirements: all requirements complete
+## New Features Wish List
 
-    Exceeds: all 3 complete
+- implement back-end and UI for adding more featured projects and project data
 
-# COMPONENTS by file:
+## Prep and Build Steps:
 
-        ./app.js :
+### Step 1: Featuring Projects 1 thru 5
 
-            main express app
+- Verify that all Projects pass a Quality check and all shined up for display
 
-        ./routes/index.js and projects.js :
+- Must have finished projects, that are ready to go live
+  - ideally Github public repo or some other public place for visitors to see your code
+  - a live internet link to the demo of or to show the app or service running
 
-            routers for /, /about and /projects
+### Step 2: Images and Screenshots of Projects 1 - 5
 
-        ./routes/message.js :
+- Profile pic of yourself or logo, avatar that will be displayed with your portfolio
 
-            modified from Express Basics version
-              added custom msg key/values
-              and added a logErrors function
-                for console and error logging
+- best to take widescreen screen shots of you app or service
+  - full imgs to show each site's various pages
 
-        ./importData.js :
+- check out my portfolio for an idea of what these are
+  - https://dap-dev.herokuapp.com
 
-            to import project, profile json data
+### Step 3: create json data for projects and profile
 
-        ./profile.json :
+- imported using app.locals
 
-            personal and contact info data used in
-              layout.pug, about.pug and sidebar in layout.pug
+- hint: rename the sample data.json and profile.json to data.bak.json and profile.bak.json
+  - when ready, just create your own data/profile.json files using the same json syntax
 
-        ./data.json :
+- if keeping data in a different folder and/or using different names
+  - place path to and name of your json data files in respective places in importData.js
 
-            project data used in part through-out all pug files
-              and in project.pug and projects.pug
+- the importData.js will automatically import your json data for use in the app
+  - for now...
+    - dont change portfolio.projects and portfolio.profile
+      - these object references are used through-out the code
+  - once more familiar with the code...
+    - then change the object names and every references to them
 
-        ./public/css/styles.css :
+- ***todo: include some sample explanation or demo code here***
 
-            placed my custom styles at end of styles.css
+### Step 4: set up routes and rendering for valid paths
 
-        ./views/layout.pug :
+- If you did step 3: correctly, you wont need to doing anything here.
+  - In a real world app, a developer and dev-ops will need to know these routes inside and out.
+  - You will need know how the routes are setup, how these work, and what happens the routes don't work.
 
-            added my own favicon
+- The static routes are loaded by...
+  - routes/index.js
+  - routes/about.js
 
-        ./views/project and projects.pug :
+- The dynamic routes for each featured project are loaded by...
+  - routes/projects.js
+    - this uses the object imported from importData.js to create any routes needed
 
-            for rendering project views, add profile
-              and project data properties as needed
+- Console logging is built-in
+  - so the web server will log what it is doing
+    - routes/message.js is an easy way to set up console messaging
+      - imported by app.js
+      - used by static routes (index.js) and dynamic routes (projects.js)
+      - in a real world production web server, this will most likely be handled by the hosting platform
+        - I use Heroku, but there are many others; like Joyent for example.
 
-        ./views/index.pug and about.pug :
+***- todo:
+  - add code to enable when in development mode, but disabled in production mode
+  - add code to write console logging to log file in development mode***
 
-            add profile and project data properties as needed
+### STEP 5: rendering for static, index and about,
 
-        ./views/error.pug :
+- project and profile data passed to pug files via res.local
+  - ***todo: include some sample explanation or demo code here***
 
-            for rendering custom status 404 pages
-              using error.status, error.message and error.stack properties
+- project and profile data properties added to all pug files
+  - ***todo: include some sample explanation or demo code here***
 
-        ./img/profilePic :
+### STEP 6: error handling
 
-            add my own profile img and favicon img
+- uses custom error module: routes/message.js
+  - console logging of errors
+  - different err logged and data properties and profile data passed to error.pug
+    - when called from /projects/:id
+    - or for invalid paths
 
-        ./img/project1 through 5 :
+- ***todo: include some sample explanation or demo code here***
 
-            screen-shots of tech-degree projects 1 thru 5
+### Step 7: include use of node.js path module
 
-# COMING SOON:
+- ***todo: include some explanation or demo code here that shows why 'PATHS' is needed***
 
-    Will be adding more projects.
+### STEP 8: This is private, unpublished, NPM package
 
-    implement back-end and front-end UI for adding featured projects and project data
+- launches express app in development environment
+    - npm start
 
-# REQUIREMENTS:
+- ***todo: include NPM how-to and sample explanation or demo code here***
 
-    Step 1A: Featuring Projects 1 thru 5
+- ***todo: include use of Firefox and/or Chrome Dev Tools how-to here***
 
-    make sure we have a live link for each "front-end" project
+## COMPONENTS by file:
 
-      Project 1 : Random Quotes Generator
-          Live Link:  https://pereznetworks.github.io/TechDegree-Project1/
-          GitHub : https://github.com/pereznetworks/TechDegree-Project1
+### Javascript
 
-      Project 2 : Pagination and Content Filtering
-          Live Link:  https://pereznetworks.github.io/TechDegree-Project2/
-          GitHub : https://github.com/pereznetworks/TechDegree-Project2
+#### ./app.js :
 
-      Project 3 : An Interactive Form
-          Live Link:  https://pereznetworks.github.io/TD-Project3/
-          GitHub : https://github.com/pereznetworks/TD-Project3
+- main express app
 
-      Project 4 : Tic Tac Toe
-          Live Link:  https://pereznetworks.github.io/TD-Project4/
-          GitHub : https://github.com/pereznetworks/TD-Project4
+#### ./routes/index.js and projects.js :
 
-      Project 5 : Employee Directory
-          Live Link:  https://pereznetworks.github.io/TD-Project5/
-          GitHub : https://github.com/pereznetworks/TD-Project5
+- routes for /, /about and /projects
 
-      Step 1B: QA Front-end Projects
+#### ./routes/message.js :
 
-          All Projects QA checked and all shined up for display
+- modified from Express Basics version
+  - added custom msg key/values
+  - and added a logErrors function
+  - for console and error logging
 
-    Step 2: have screen shots for all front-end Projects 1 - 5
+#### ./importData.js :
 
-      and a widescreen full imgs to show each site's various pages
+- to import project, profile json data
 
-    Step 3: create json data for projects and profile
+### JSON Data
 
-      import to app.locals
+#### ./profile.json :
 
-      using my own custom module: importData.js
+- personal and contact info data used in
+  - layout.pug, about.pug and sidebar in layout.pug
 
-      access data in pug templates
+#### ./data.json :
 
-    Step 4: set up routes and rendering for valid paths
+- project data used in part through-out all pug files
+  - and in project.pug and projects.pug
 
-      static routes, index and about
+### CSS Styling
 
-      dynamic routes for project pages
+#### ./public/css/styles.css :
 
-    STEP 5: rendering for static, index and about,
+- placed my custom styles at end of styles.css
 
-      project and profile data passed to pug files via res.local
+### PUG templates
 
-      project and profile data properties added to all pug files
+####./views/layout.pug :
 
-    STEP 6: error handling complete and tested
+- sets up the basic layout of all the pages in the site
 
-      using my own custom error module: message.js
+#### ./views/project and projects.pug :
 
-      console logging of errors
+- for rendering project views, your profile page, and project data properties as needed
 
-      different err logged and data properties and profile data passed to error.pug
+#### ./views/index.pug and about.pug :
 
-          when called from /projects/:id
+- add profile and project data properties as needed
 
-          or for invalid paths
+#### ./views/error.pug :
 
-    Step 7: include use of node.js path module
+- for rendering custom status 404 pages
+- using error.status, error.message and error.stack properties
 
-# Exceeds
+#### ./img/profilePic :
 
-    STEP 8: Extra features
+- add my own profile img and favicon img
 
-      Exceeds Step 1: npm start launches express app
+#### ./img/project :
 
-      Exceeds Step 2: use error.status, error.message and error.stack properties in custom error page
-
-      Exceeds Step 3: custom styles added to bottom of css/style.css
-
-    STEP 9: Deployed to Heroku
+- screen-shots of tech-degree projects 1 thru 5
