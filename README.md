@@ -1,4 +1,4 @@
-# A Tutorial: Building A Portfolio Site, using Node.js and Express, JSON data, and PUG templates 
+# A Tutorial: Building A Portfolio Site, using Node.js and Express, JSON data, and PUG templates
 
 ## ***Slowly turning this into a tutorial project***
 
@@ -30,7 +30,7 @@
 
 - Verify that all projects to be featured pass a quality check and are all shined up for display
 
-- Must have finished projects, that are ready to go live
+- ideally have finished projects, that are ready to go live
   - ideally Github public repo or some other public place for visitors to see your code
   - a live internet link to the demo of or to show the app or service running
 
