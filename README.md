@@ -4,13 +4,7 @@
 
    *the actual repo for my portfolio site is now private, for obvious reasons =)*
 
-   *the profile.json and data.json are now samples, showing the kind of data should go into these files*
-
-   *in time this readme will be edited to explain the inner-workings of a live express server and web app*
-
-   *and will include some how-to, for developers to build their own portfolio app*
-
-   *this tutorial does not go into how to setup a hosting nor how to launch the app online*
+   *this tutorial does not go into how to setup hosting nor how to launch the app online*
 
 # A Portfolio of Web Apps
 
