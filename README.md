@@ -61,7 +61,7 @@
   - once more familiar with the code...
     - then change the object names and every references to them
 
-- ***todo: include some sample explanation or demo code here***
+***todo: include some sample explanation or demo code here***
 
 ### Step 4: set up routes and rendering for valid paths
 
