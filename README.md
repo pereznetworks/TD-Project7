@@ -160,7 +160,7 @@
 
 ### PUG templates
 
-####./views/layout.pug :
+#### ./views/layout.pug :
 
 - sets up the basic layout of all the pages in the site
 
