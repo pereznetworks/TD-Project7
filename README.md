@@ -10,7 +10,7 @@
 
    *and will include some how-to, for developers to build their own portfolio app*
 
-   *this github does not go into how to setup a hosting acct and launch the app online*
+   *this tutorial does not go into how to setup a hosting nor how to launch the app online*
 
 # A Portfolio of Web Apps
 
