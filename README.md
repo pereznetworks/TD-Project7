@@ -6,9 +6,9 @@
 
    *this tutorial does not go into how to setup hosting nor how to launch the app online*
 
-   ***TODO: Create a Bootstrap version of this project ***
+   ***TODO: Create a Bootstrap version of this project***
 
-   ***TODO: Create a React version of this project ***
+   ***TODO: Create a React version of this project***
 
 # A Portfolio of Web Apps
 
