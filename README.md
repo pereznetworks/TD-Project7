@@ -28,7 +28,7 @@
   - ideally Github public repo or some other public place for visitors to see your code
   - a live internet link to the demo of or to show the app or service running
 
-### Step 2: Images and Screenshots of Projects 1 - 5
+### Step 2: Images and Screenshots of Projects
 
 - Profile pic of yourself or logo, avatar that will be displayed with your portfolio
 
