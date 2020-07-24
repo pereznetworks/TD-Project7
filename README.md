@@ -1,4 +1,6 @@
-# ***Slowly turning this into a tutorial project***
+# A Tutorial: Building A Portfolio Site, using Node.js and Express, JSON data, and PUG templates 
+
+## ***Slowly turning this into a tutorial project***
 
    *Out of this project, I will create several other projects.*
 
@@ -10,7 +12,7 @@
 
    ***TODO: Create a React version of this project***
 
-# A Portfolio of Web Apps
+# A Portfolio Site for your of Web Apps
 
 - built as part of Full Stack Java Script, Team TreeHouse Tech Degree, Unit 7  
 
