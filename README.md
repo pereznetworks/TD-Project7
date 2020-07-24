@@ -2,7 +2,7 @@
 
    *Out of this project, I will create several other projects.*
 
-   *the actual repo for my portfolio site is now private, for obvious reasons =)*
+   *the actual repo for my live portfolio site is now private, for obvious reasons =)*
 
    *this tutorial does not go into how to setup hosting nor how to launch the app online*
 
