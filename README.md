@@ -85,7 +85,7 @@
       - in a real world production web server, this will most likely be handled by the hosting platform
         - I use Heroku, but there are many others; like Joyent for example.
 
-***- todo:
+***todo:
   - add code to enable when in development mode, but disabled in production mode
   - add code to write console logging to log file in development mode***
 
