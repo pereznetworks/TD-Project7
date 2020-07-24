@@ -20,9 +20,9 @@
 
 ## Prep and Build Steps:
 
-### Step 1: Featuring Projects 1 thru 5
+### Step 1: Featuring Your Web App, Web Server or Projects
 
-- Verify that all Projects pass a Quality check and all shined up for display
+- Verify that all projects to be featured pass a quality check and are all shined up for display
 
 - Must have finished projects, that are ready to go live
   - ideally Github public repo or some other public place for visitors to see your code
